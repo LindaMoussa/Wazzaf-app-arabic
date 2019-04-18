@@ -1,0 +1,270 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    direction: rtl;
+}
+
+nav.navbar {
+    background-color: #00b38f;
+    overflow-x: hidden;
+}
+
+a.navbar-brand {
+    color: #fff;
+    padding: 1.5%;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul.navbar-nav li a:hover{
+    color: #fff6be!important;
+}
+ul.navbar-nav li a.sign-out{
+    border:1px solid transparent !important;
+
+}
+ul.navbar-nav li a.sign-out:hover{
+    color: #000 !important;
+}
+ul.navbar-nav li a{
+/*   font-family: 'GilroyMed';*/
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    font-weight:500;
+    letter-spacing: 0.7px;
+    text-align: left;
+}
+button.navbar-toggler{
+    border: none;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+button.navbar-toggler i{
+    color: #fff;
+}
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+.btn {
+    margin: 2% 1%;
+}
+.btn-primary ,.btn-info{
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: #7ed3b2 !important;
+    border-color: #00b38f !important;
+}
+.btn-primary:hover ,.btn-info:hover{
+    color:  #565341;
+}
+#filterBtn{
+    display: none;
+}
+.big-btn {
+    margin-left: -8%;
+}
+
+.card {
+    margin: 15px;
+}
+
+.card-title {
+    margin: 15px;
+}
+
+li.nav-item a:hover {
+    color: #fff !important;
+}
+.filters select{
+    border: 1px solid rgba(52, 155, 209, 0.2) !important;
+    box-shadow: 1px 1px 5px rgba(52, 155, 209, 0.2);
+}
+.filters label{
+    font-size: 18px;
+}
+.filter{
+    visibility:hidden;
+    width:100%;
+}
+.emp .container {
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.emp-card {
+    margin: 5% 10% 0 10%;
+    width: 50%;
+    background-color: white;
+    border-radius: 2%;
+    border: 1px solid rgba(52, 155, 209, 0.2) !important;
+    box-shadow: 2px 2px 10px rgba(52, 155, 209, 0.2);
+}
+.emp-name {
+    font-size: 32px;
+    color: black;
+    text-transform: capitalize;
+}
+.emp-job-title{
+    text-transform: capitalize;
+    font-size: 22px;
+    color: rgba(0,0,0,0.7);
+}
+a {
+    text-decoration: none !important;
+}
+.emp-contacts .contacts h6{
+    color: rgba(0,0,0,0.4);
+    font-size: 20px !important;
+    
+}
+p.emp-contact{
+      word-wrap: break-word;
+
+}
+.emp p {
+    color: rgba(0,0,0,0.6);
+    font-size: 18px;
+/*    text-transform: capitalize;*/
+}
+.emp-img img {
+    border-radius: 50% 50%;
+/*    margin-top: 20%;*/
+    object-fit: cover;
+}
+.emp .skill{
+    text-transform: capitalize;
+}
+/*********** footer ****************/
+footer {
+    background-color: #00040d;
+    margin-top: 10%;
+}
+
+footer h6 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+footer a {
+    text-decoration: none;
+    margin-top: 5%;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+footer a:hover{
+    color: #fff;
+}
+footer a p{
+/*    font-weight: 600;*/
+    padding: 2%;
+    letter-spacing: 0.8px;
+
+}
+footer a i {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px !important;
+    padding: 1.5% 2%;
+}
+
+footer a i:hover,footer a p:hover {
+    color: #7ed3b2;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+footer .allRights{
+    color:#fff;
+    opacity: 0.7;
+}
+/*****scroll*/
+body::-webkit-scrollbar {
+    width: 1em;
+    height: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    /*    background-color: #343a40;*/
+    background-color: #00b38f;
+    outline: 1px solid darkgray;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/****************/
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+      .emp-card {
+        width:80% !important;
+    } 
+    .emp-img{
+        margin-bottom: 35px !important ;
+        width: 200px;
+    }
+   
+    h6 span img.filter{
+        width:100% !important;
+    }
+    footer{
+        text-align: left;
+    }
+    footer h6{
+        font-weight: 700;
+    }
+    footer .icons{
+        text-align: center;
+    }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+     .emp-card {
+        width:80% !important;
+    } 
+    .emp-img{
+        margin-bottom: 35px !important ;
+        width: 200px;
+    }
+   
+    h6 span img.filter{
+        width:100% !important;
+    }
+    footer{
+        text-align: left;
+    }
+    footer h6{
+        font-weight: 700;
+    }
+    footer .icons{
+        text-align: center;
+    }
+   
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+   
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+}
